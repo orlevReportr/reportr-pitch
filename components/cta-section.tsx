@@ -8,7 +8,7 @@ const milestones = [
   {
     icon: Calendar,
     title: "Product-Market Fit Validation",
-    description: "Month 6: ~50 active users, strong engagement, early paying conversions",
+    description: "Month 6: 60+ paying seats (120–200 active users), strong engagement, early expansions; benchmarking against Marloo’s 45% MoM growth",
   },
   {
     icon: Zap,
@@ -18,7 +18,7 @@ const milestones = [
   {
     icon: Shield,
     title: "Series A Ready Metrics",
-    description: "Month 18: $500k+ ARR, enterprise pilots, proven sales efficiency",
+    description: "Month 18: $500k+ ARR (≈300+ SMB seats + 2 - 3 enterprise pilots), proven sales efficiency; sustained 20 - 25% MoM vs Marloo’s 45% MoM",
   },
 ]
 
@@ -155,14 +155,6 @@ export function CTASection() {
                     </svg>
                     Go-to-Market Strategy
                   </a>
-                </div>
-              </div>
-
-              <div className="body-sm text-muted-foreground space-y-2">
-                <div>Ready to transform how regulated industries handle documentation?</div>
-                <div className="text-xs italic border-t pt-2 max-w-2xl mx-auto">
-                  *Forward-looking statements. Compliance features in development. Final product subject to regulatory review. 
-                  Individual advisors remain responsible for all regulatory compliance and document accuracy.
                 </div>
               </div>
             </div>
