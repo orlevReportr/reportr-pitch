@@ -8,7 +8,7 @@ const features = [
   {
     icon: Bot,
     title: "AI Meeting Processing",
-    description: "Planned: Calendar-integrated system to process meeting recordings with speaker identification",
+    description: "Built: Calendar-integrated system to process meeting recordings with speaker identification",
   },
   {
     icon: FileCheck,
