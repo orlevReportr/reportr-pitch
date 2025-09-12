@@ -44,15 +44,15 @@ export function CTASection() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section ref={sectionRef} className="section-y bg-gradient-to-br from-primary/5 via-background to-accent/5">
+        <div className="container mx-auto container-px">
           <div
             className={`text-center mb-16 transition-all duration-1000 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-[family-name:var(--font-playfair)]">
+            <h2 className="h2 mb-6">
               Join Us to Scale <span className="gradient-text">Impact</span>, Not Admin
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty mb-8">
+            <p className="lead text-muted-foreground max-w-3xl mx-auto text-pretty mb-8">
               Perfect timing: Marloo validated the market with A$4.2M raise, advisor shortage creates urgency,
               and new ASIC requirements demand better documentation. Ready to scale beyond financial advice.
             </p>
@@ -62,18 +62,18 @@ export function CTASection() {
             <div className={`transition-all duration-1000 ${isVisible ? "animate-slide-in-left" : "opacity-0"}`}>
               <Card className="bg-card border-primary/20">
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold mb-6">The Ask</h3>
+                  <h3 className="h3 mb-6">The Ask</h3>
                   <div className="space-y-6">
                     <div>
                       <h4 className="font-semibold text-primary mb-2">A$350K SAFE (A$3M cap)</h4>
-                      <p className="text-muted-foreground text-sm">
+                      <p className="text-muted-foreground body-sm">
 24-month runway with conservative milestones based on realistic development timeline
                       </p>
                     </div>
 
                     <div>
                       <h4 className="font-semibold text-primary mb-2">Use of Funds</h4>
-                      <ul className="text-muted-foreground text-sm space-y-1">
+                      <ul className="text-muted-foreground body-sm space-y-1">
                         <li>• 50% Engineering (CRM integrations, AI/compliance features)</li>
                         <li>• 25% Customer Acquisition (direct sales, partnerships)</li>
                         <li>• 15% Marketing (content, webinars, industry presence)</li>
@@ -87,7 +87,7 @@ export function CTASection() {
 
             <div className={`transition-all duration-1000 ${isVisible ? "animate-slide-in-right" : "opacity-0"}`}>
               <div className="space-y-6">
-                <h3 className="text-2xl font-bold">Milestones to Next Round</h3>
+                <h3 className="h3">Milestones to Next Round</h3>
 
                 {milestones.map((milestone, index) => (
                   <Card
@@ -104,7 +104,7 @@ export function CTASection() {
                         </div>
                         <div>
                           <h4 className="font-semibold mb-1">{milestone.title}</h4>
-                          <p className="text-muted-foreground text-sm">{milestone.description}</p>
+                          <p className="text-muted-foreground body-sm">{milestone.description}</p>
                         </div>
                       </div>
                     </CardContent>
@@ -126,9 +126,9 @@ export function CTASection() {
                 <div className="flex justify-center">
                   <div className="bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 rounded-xl px-8 py-6">
                     <div className="text-center space-y-2">
-                      <div className="text-lg font-semibold text-primary">Investment Opportunity</div>
-                      <div className="text-2xl font-bold">A$350K SAFE @ A$3M Cap</div>
-                      <div className="text-sm text-muted-foreground">24-month runway • Series A preparation</div>
+                      <div className="font-semibold text-primary">Investment Opportunity</div>
+                      <div className="h3">A$350K SAFE @ A$3M Cap</div>
+                      <div className="body-sm text-muted-foreground">24-month runway • Series A preparation</div>
                     </div>
                   </div>
                 </div>
@@ -147,7 +147,7 @@ export function CTASection() {
                   <a 
                     href="/docs/Go-to-Market Strategy for Reportr (AI Meeting Assistant for Australian Advisers).pdf"
                     download="Reportr-Go-to-Market-Strategy.pdf"
-                    className="inline-flex items-center px-6 py-3 border border-accent/20 rounded-lg bg-accent/5 hover:bg-accent/10 transition-colors text-accent-foreground font-medium"
+                    className="inline-flex items-center px-6 py-3 border border-accent/20 rounded-lg bg-accent/5 hover:bg-accent/10 transition-colors text-primary font-medium"
                   >
                     <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -157,7 +157,7 @@ export function CTASection() {
                 </div>
               </div>
 
-              <div className="text-sm text-muted-foreground space-y-2">
+              <div className="body-sm text-muted-foreground space-y-2">
                 <div>Ready to transform how regulated industries handle documentation?</div>
                 <div className="text-xs italic border-t pt-2 max-w-2xl mx-auto">
                   *Forward-looking statements. Compliance features in development. Final product subject to regulatory review. 

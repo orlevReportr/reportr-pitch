@@ -71,15 +71,15 @@ export function BusinessSection() {
   }, [])
 
   return (
-    <section id="pricing" ref={sectionRef} className="py-20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="pricing" ref={sectionRef} className="section-y">
+      <div className="container mx-auto container-px">
         <div
           className={`text-center mb-16 transition-all duration-1000 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 font-[family-name:var(--font-playfair)]">
+          <h2 className="h2 mb-6">
             Planned <span className="gradient-text">Pricing Strategy</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
+          <p className="lead text-muted-foreground max-w-3xl mx-auto text-pretty">
             Our pricing strategy based on GTM research: accessible for solo advisors, efficient for mid-size firms, enterprise-ready compliance.
           </p>
         </div>
@@ -110,7 +110,7 @@ export function BusinessSection() {
                       <tier.icon className="h-8 w-8" />
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold mb-2">{tier.name}</h3>
+                  <h3 className="h3 mb-2">{tier.name}</h3>
                   <div className="mb-2">
                     <span className="text-4xl font-bold">{tier.price}</span>
                     <span className="text-muted-foreground ml-1">/{tier.period}</span>

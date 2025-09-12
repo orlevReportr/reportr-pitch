@@ -46,10 +46,10 @@ export function Navigation() {
           isScrolled ? "bg-background/95 backdrop-blur-sm border-b border-border" : "bg-transparent"
         }`}
       >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto container-px">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
-              <span className="text-2xl font-bold gradient-text font-[family-name:var(--font-playfair)]">Reportr</span>
+              <span className="text-2xl font-bold gradient-text font-display">Reportr</span>
             </div>
 
             <div className="hidden md:block">

@@ -66,15 +66,15 @@ export function AboutSection() {
   }, [])
 
   return (
-    <section id="about" ref={sectionRef} className="py-20 bg-gradient-to-br from-accent/5 via-background to-primary/5">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" ref={sectionRef} className="section-y bg-gradient-to-br from-accent/5 via-background to-primary/5">
+      <div className="container mx-auto container-px">
         <div
           className={`text-center mb-16 transition-all duration-1000 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 font-[family-name:var(--font-playfair)]">
+          <h2 className="h2 mb-6">
             About <span className="gradient-text">Our Team</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
+          <p className="lead text-muted-foreground max-w-3xl mx-auto text-pretty">
             A world-class team combining deep financial services expertise with cutting-edge AI technology.
           </p>
         </div>
@@ -95,9 +95,9 @@ export function AboutSection() {
                     alt={member.name}
                     className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
                   />
-                  <h3 className="text-xl font-bold mb-1">{member.name}</h3>
-                  <p className="text-primary font-medium text-sm mb-3">{member.role}</p>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{member.bio}</p>
+                  <h3 className="h4 mb-1">{member.name}</h3>
+                  <p className="text-primary font-medium body-sm mb-3">{member.role}</p>
+                  <p className="text-muted-foreground body-sm leading-relaxed">{member.bio}</p>
                 </div>
 
                 <div className="flex justify-center space-x-3">
@@ -119,7 +119,7 @@ export function AboutSection() {
         <div className={`transition-all duration-1000 delay-500 ${isVisible ? "animate-fade-in" : "opacity-0"}`}>
           <Card className="bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20">
             <CardContent className="p-8 text-center">
-              <h3 className="text-2xl font-bold mb-4">Why We Built Reportr</h3>
+              <h3 className="h3 mb-4">Why We Built Reportr</h3>
               <p className="text-muted-foreground max-w-4xl mx-auto text-pretty leading-relaxed mb-6">
                 After witnessing Australian financial advisors struggle with post-Royal Commission compliance burdens, 
                 we knew AI could transform how regulated professionals handle documentation. Our team combines deep 

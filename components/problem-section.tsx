@@ -57,15 +57,15 @@ export function ProblemSection() {
   }, [])
 
   return (
-    <section id="problem" ref={sectionRef} className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="problem" ref={sectionRef} className="section-y bg-muted/30">
+      <div className="container mx-auto container-px">
         <div
           className={`text-center mb-16 transition-all duration-1000 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 font-[family-name:var(--font-playfair)]">
+          <h2 className="h2 mb-6">
             Documentation Is the <span className="gradient-text">Bottleneck</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
+          <p className="lead text-muted-foreground max-w-3xl mx-auto text-pretty">
             Post-Royal Commission Australia: remaining advisors face unprecedented documentation requirements while 
             generic AI tools ignore regulatory realities of financial services compliance.
           </p>
@@ -86,8 +86,8 @@ export function ProblemSection() {
                     <problem.icon className="h-8 w-8 text-primary" />
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-3">{problem.title}</h3>
-                <p className="text-muted-foreground mb-4 text-sm">{problem.description}</p>
+                <h3 className="h4 mb-3">{problem.title}</h3>
+                <p className="text-muted-foreground mb-4 body-sm">{problem.description}</p>
                 <div className="border-t pt-4">
                   <div className="text-3xl font-bold text-primary mb-1">{problem.stat}</div>
                   <div className="text-xs text-muted-foreground uppercase tracking-wide">{problem.statLabel}</div>

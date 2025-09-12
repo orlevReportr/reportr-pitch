@@ -12,7 +12,7 @@ const competitors = [
     strengths: ["Easy setup", "Mass market"],
     weaknesses: ["No compliance", "Generic output", "No industry templates"],
     icon: Users,
-    color: "text-slate-500",
+    color: "text-muted-foreground",
   },
   {
     name: "Vertical-Specific (Marloo)",
@@ -20,7 +20,7 @@ const competitors = [
     strengths: ["Domain expertise", "Regulatory focus"],
     weaknesses: ["Single industry", "Limited expansion", "Finance-only templates"],
     icon: Target,
-    color: "text-orange-500",
+    color: "text-accent",
   },
   {
     name: "Sales Tools (Gong/Chorus)",
@@ -28,7 +28,7 @@ const competitors = [
     strengths: ["Enterprise scale", "Deep analytics"],
     weaknesses: ["Sales-only", "High cost", "Internal-facing only"],
     icon: Zap,
-    color: "text-blue-500",
+    color: "text-primary",
   },
 ]
 
@@ -63,15 +63,15 @@ export function CompetitiveSection() {
   }, [])
 
   return (
-    <section id="competitive" ref={sectionRef} className="py-20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="competitive" ref={sectionRef} className="section-y">
+      <div className="container mx-auto container-px">
         <div
           className={`text-center mb-16 transition-all duration-1000 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 font-[family-name:var(--font-playfair)]">
+          <h2 className="h2 mb-6">
             <span className="gradient-text">Competitive</span> Landscape
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
+          <p className="lead text-muted-foreground max-w-3xl mx-auto text-pretty">
             Our strategy positions between generic AI tools and narrow vertical solutions—building compliance-first 
             architecture with Australia-focused expertise that established players struggle to match.
           </p>
@@ -92,7 +92,7 @@ export function CompetitiveSection() {
                     <competitor.icon className="h-6 w-6" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg">{competitor.name}</h3>
+                    <h3 className="h4">{competitor.name}</h3>
                     <p className="text-xs text-muted-foreground">{competitor.description}</p>
                   </div>
                 </div>
@@ -102,7 +102,7 @@ export function CompetitiveSection() {
                     <Badge variant="secondary" className="text-xs mb-2">Strengths</Badge>
                     {competitor.strengths.map((strength) => (
                       <div key={strength} className="flex items-center space-x-2 text-sm">
-                        <CheckCircle className="h-3 w-3 text-green-500 flex-shrink-0" />
+                        <CheckCircle className="h-3 w-3 text-primary flex-shrink-0" />
                         <span>{strength}</span>
                       </div>
                     ))}
@@ -112,7 +112,7 @@ export function CompetitiveSection() {
                     <Badge variant="destructive" className="text-xs mb-2">Gaps</Badge>
                     {competitor.weaknesses.map((weakness) => (
                       <div key={weakness} className="flex items-center space-x-2 text-sm">
-                        <XCircle className="h-3 w-3 text-red-500 flex-shrink-0" />
+                        <XCircle className="h-3 w-3 text-destructive flex-shrink-0" />
                         <span>{weakness}</span>
                       </div>
                     ))}
@@ -128,11 +128,11 @@ export function CompetitiveSection() {
             <CardContent className="p-8">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div>
-                  <div className="flex items-center space-x-3 mb-4">
-                    <div className="p-2 bg-primary rounded-lg">
-                      <Shield className="h-6 w-6 text-primary-foreground" />
-                    </div>
-                    <h3 className="text-2xl font-bold">Reportr's Planned Positioning</h3>
+                    <div className="flex items-center space-x-3 mb-4">
+                      <div className="p-2 bg-primary rounded-lg">
+                        <Shield className="h-6 w-6 text-primary-foreground" />
+                      </div>
+                    <h3 className="h3">Reportr's Planned Positioning</h3>
                   </div>
                   <p className="text-muted-foreground mb-4">
                     Building the only AI meeting assistant designed to generate client-ready, compliance-focused 

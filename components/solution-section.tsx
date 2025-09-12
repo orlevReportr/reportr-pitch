@@ -49,14 +49,14 @@ export function SolutionSection() {
   }, [])
 
   return (
-    <section id="solution" ref={sectionRef} className="py-20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="solution" ref={sectionRef} className="section-y">
+      <div className="container mx-auto container-px">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className={`transition-all duration-1000 ${isVisible ? "animate-slide-in-left" : "opacity-0"}`}>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-[family-name:var(--font-playfair)]">
+            <h2 className="h2 mb-6">
               Meet <span className="gradient-text">Reportr</span>
             </h2>
-            <p className="text-xl text-muted-foreground mb-8 text-pretty">
+            <p className="lead text-muted-foreground mb-8 text-pretty">
               Building the first AI meeting assistant designed specifically for Australian financial advisors—our MVP 
               will transform client conversations into ASIC-compliant document drafts for advisor review and finalization.
             </p>
@@ -68,7 +68,7 @@ export function SolutionSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Meeting → Statement of Advice</h4>
-                  <p className="text-muted-foreground text-sm">
+                  <p className="text-muted-foreground body-sm">
                     Planned: AI-assisted draft SoA generation with client goals, recommendations, and ASIC disclosure templates
                   </p>
                 </div>
@@ -80,7 +80,7 @@ export function SolutionSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Compliance Template Engine</h4>
-                  <p className="text-muted-foreground text-sm">
+                  <p className="text-muted-foreground body-sm">
                     In development: Template library for FSG delivery, fact-finding, advice presentation, and RoA documentation
                   </p>
                 </div>
@@ -92,7 +92,7 @@ export function SolutionSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">XPLAN CRM Integration</h4>
-                  <p className="text-muted-foreground text-sm">
+                  <p className="text-muted-foreground body-sm">
                     Roadmap priority: Direct integration with XPLAN for seamless client data sync and workflow automation
                   </p>
                 </div>
@@ -100,7 +100,7 @@ export function SolutionSection() {
             </div>
 
             <div className="bg-accent/20 border border-accent/40 rounded-lg px-4 py-3 inline-block">
-              <p className="text-sm font-medium text-accent-foreground">MVP Development Timeline: Q2 2025</p>
+              <p className="body-sm font-medium text-primary">MVP Development Timeline: Q2 2025</p>
             </div>
           </div>
 
@@ -120,8 +120,8 @@ export function SolutionSection() {
                         <feature.icon className="h-6 w-6 text-primary" />
                       </div>
                     </div>
-                    <h3 className="font-semibold mb-2">{feature.title}</h3>
-                    <p className="text-muted-foreground text-sm">{feature.description}</p>
+                    <h3 className="h4 mb-2">{feature.title}</h3>
+                    <p className="text-muted-foreground body-sm">{feature.description}</p>
                   </CardContent>
                 </Card>
               ))}
