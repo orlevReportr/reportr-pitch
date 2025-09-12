@@ -25,3 +25,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+next.config.js
+
+# terraform
+**/.terraform/
+*.tfstate
+*.tfstate.backup
+terraform.tfstate
+terraform.tfstate.backup
+.terraform.tfstate.lock.info
+# allow Terraform lockfile to be tracked if desired
+#!**/.terraform.lock.hcl
