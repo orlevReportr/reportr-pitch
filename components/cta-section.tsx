@@ -120,7 +120,7 @@ export function CTASection() {
           >
             <div className="space-y-6">
               <div className="text-lg text-muted-foreground mb-8">
-                Reportr turns meetings into <strong>compliant, shippable work</strong>—not just notes.
+                Reportr turns meetings into <strong>compliant, shippable work</strong> - not just notes.
               </div>
 
               <div className="space-y-8">

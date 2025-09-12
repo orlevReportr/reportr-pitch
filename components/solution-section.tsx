@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
-import { Bot, FileCheck, Zap, Shield } from "lucide-react"
+import { Bot, FileCheck, Zap, Shield, KeyRound, Users } from "lucide-react"
 
 const features = [
   {
@@ -24,6 +24,16 @@ const features = [
     icon: Shield,
     title: "Compliance Infrastructure",
     description: "Architecture designed for secure document storage, encryption, and audit trails per ASIC requirements",
+  },
+  {
+    icon: Users,
+    title: "Built by Advisors + Security Experts",
+    description: "Co-designed with Australian financial planners; engineered by security specialists with SOC 2/ISO 27001 readiness in mind",
+  },
+  {
+    icon: KeyRound,
+    title: "SSO + Zoom Meetings",
+    description: "Built: Google/Microsoft SSO and Zoom OAuth; one‑click auto‑join from calendar invites",
   },
 ]
 
@@ -57,7 +67,7 @@ export function SolutionSection() {
               Meet <span className="gradient-text">Reportr</span>
             </h2>
             <p className="lead text-muted-foreground mb-8 text-pretty">
-              Building the first AI meeting assistant designed specifically for Australian financial advisors—our MVP 
+              Building the first AI meeting assistant designed specifically for Australian financial advisors - our MVP 
               will transform client conversations into ASIC-compliant document drafts for advisor review and finalization.
             </p>
 
@@ -81,7 +91,7 @@ export function SolutionSection() {
                 <div>
                   <h4 className="font-semibold mb-1">Compliance Template Engine</h4>
                   <p className="text-muted-foreground body-sm">
-                    In development: Template library for FSG delivery, fact-finding, advice presentation, and RoA documentation
+                    Built: Template library for FSG delivery, fact-finding, advice presentation, and RoA documentation
                   </p>
                 </div>
               </div>
@@ -105,7 +115,7 @@ export function SolutionSection() {
                 <div>
                   <h4 className="font-semibold mb-1">AFSL Approved Product List (APL)</h4>
                   <p className="text-muted-foreground body-sm">
-                    Roadmap: targeted program for AFSL inclusion — due‑diligence package (security/compliance attestations,
+                    Roadmap: targeted program for AFSL inclusion — due diligence package (security/compliance attestations,
                     SOC&nbsp;2/ISO&nbsp;27001 readiness), data residency, audit logs, legal review, and pilot references to meet APL requirements.
                   </p>
                 </div>

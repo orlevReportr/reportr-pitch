@@ -45,7 +45,7 @@ export function HeroSection() {
 
             <div className={`transition-all duration-1000 delay-700 ${isVisible ? "animate-fade-in" : "opacity-0"}`}>
               <div className="mt-12 text-sm text-muted-foreground">
-                Pre-revenue startup • MVP in development • Strategic advisor partnerships • Australia-first strategy
+                Pre-revenue startup • MVP built • Strategic advisor partnerships • Australia-first strategy
               </div>
             </div>
           </div>
