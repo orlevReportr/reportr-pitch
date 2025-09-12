@@ -23,6 +23,7 @@ const milestones = [
 ]
 
 export function CTASection() {
+  const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || ''
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef<HTMLElement>(null)
 
@@ -135,7 +136,7 @@ export function CTASection() {
                 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                   <a 
-                    href="/docs/Australian Financial Planning Documentation Ecosystem.pdf"
+                    href={`${BASE_PATH}/docs/Australian Financial Planning Documentation Ecosystem.pdf`}
                     download="Reportr-Australian-Financial-Planning-Ecosystem.pdf"
                     className="inline-flex items-center px-6 py-3 border border-primary/20 rounded-lg bg-primary/5 hover:bg-primary/10 transition-colors text-primary font-medium"
                   >
@@ -145,7 +146,7 @@ export function CTASection() {
                     Market Research Report
                   </a>
                   <a 
-                    href="/docs/Go-to-Market Strategy for Reportr (AI Meeting Assistant for Australian Advisers).pdf"
+                    href={`${BASE_PATH}/docs/Go-to-Market Strategy for Reportr (AI Meeting Assistant for Australian Advisers).pdf`}
                     download="Reportr-Go-to-Market-Strategy.pdf"
                     className="inline-flex items-center px-6 py-3 border border-accent/20 rounded-lg bg-accent/5 hover:bg-accent/10 transition-colors text-primary font-medium"
                   >

@@ -36,6 +36,7 @@ const marketData = [
 ]
 
 export function MarketSection() {
+  const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || ''
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef<HTMLElement>(null)
 
@@ -130,7 +131,7 @@ export function MarketSection() {
                   <p className="text-sm text-muted-foreground">Comprehensive market research and strategic analysis</p>
                   <div className="flex flex-col sm:flex-row gap-3 justify-center">
                     <a 
-                      href="/docs/Australian Financial Planning Documentation Ecosystem.pdf"
+                      href={`${BASE_PATH}/docs/Australian Financial Planning Documentation Ecosystem.pdf`}
                       download="Reportr-Australian-Financial-Planning-Ecosystem.pdf"
                       className="inline-flex items-center px-4 py-2 text-sm border border-primary/20 rounded-lg bg-primary/5 hover:bg-primary/10 transition-colors text-primary font-medium"
                     >
@@ -140,9 +141,9 @@ export function MarketSection() {
                       Market Ecosystem Analysis
                     </a>
                     <a 
-                      href="/docs/Go-to-Market Strategy for Reportr (AI Meeting Assistant for Australian Advisers).pdf"
+                      href={`${BASE_PATH}/docs/Go-to-Market Strategy for Reportr (AI Meeting Assistant for Australian Advisers).pdf`}
                       download="Reportr-Go-to-Market-Strategy.pdf"
-                    className="inline-flex items-center px-4 py-2 text-sm border border-accent/20 rounded-lg bg-accent/5 hover:bg-accent/10 transition-colors text-primary font-medium"
+                      className="inline-flex items-center px-4 py-2 text-sm border border-accent/20 rounded-lg bg-accent/5 hover:bg-accent/10 transition-colors text-primary font-medium"
                     >
                       <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
