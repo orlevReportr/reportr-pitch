@@ -18,7 +18,7 @@ const milestones = [
   {
     icon: Shield,
     title: "Series A Ready Metrics",
-    description: "Month 18: $300k+ ARR, enterprise pilots, proven sales efficiency",
+    description: "Month 18: $500k+ ARR, enterprise pilots, proven sales efficiency",
   },
 ]
 

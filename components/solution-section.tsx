@@ -13,7 +13,7 @@ const features = [
   {
     icon: FileCheck,
     title: "Compliance-Focused Templates",
-    description: "In development: SoA, RoA, and file note templates designed to meet ASIC regulatory standards",
+    description: "Built: SoA, RoA, and file note templates designed to meet ASIC regulatory standards",
   },
   {
     icon: Zap,
@@ -94,6 +94,19 @@ export function SolutionSection() {
                   <h4 className="font-semibold mb-1">XPLAN CRM Integration</h4>
                   <p className="text-muted-foreground body-sm">
                     Roadmap priority: Direct integration with XPLAN for seamless client data sync and workflow automation
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="flex-shrink-0 w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                  <div className="w-3 h-3 bg-primary rounded-full"></div>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-1">AFSL Approved Product List (APL)</h4>
+                  <p className="text-muted-foreground body-sm">
+                    Roadmap: targeted program for AFSL inclusion — due‑diligence package (security/compliance attestations,
+                    SOC&nbsp;2/ISO&nbsp;27001 readiness), data residency, audit logs, legal review, and pilot references to meet APL requirements.
                   </p>
                 </div>
               </div>

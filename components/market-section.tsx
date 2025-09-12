@@ -29,7 +29,7 @@ const marketData = [
   {
     icon: Target,
     title: "Multi-Vertical Expansion",
-    value: "Law, Accounting, Health",
+    value: "Insurance, Accounting, Superannuation",
     growth: "Template Architecture",
     description: "Platform scales to any regulated industry needing compliant documentation",
   },

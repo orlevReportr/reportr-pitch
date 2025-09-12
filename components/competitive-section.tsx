@@ -18,7 +18,7 @@ const competitors = [
     name: "Vertical-Specific (Marloo)",
     description: "A$4.2M raised, advisors only",
     strengths: ["Domain expertise", "Regulatory focus"],
-    weaknesses: ["Single industry", "Limited expansion", "Finance-only templates"],
+    weaknesses: ["Single industry", "Limited expansion", "Finance-only templates", "Spread across too many countries too early"],
     icon: Target,
     color: "text-accent",
   },
