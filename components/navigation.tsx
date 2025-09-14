@@ -12,6 +12,7 @@ const navItems = [
   { name: "Market", href: "#market" },
   { name: "Pricing", href: "#pricing" },
   { name: "About Us", href: "#about" },
+  { name: "The Ask", href: "#ask" },
 ]
 
 export function Navigation() {

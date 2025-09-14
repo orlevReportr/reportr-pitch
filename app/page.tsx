@@ -6,7 +6,7 @@ import { CompetitiveSection } from "@/components/competitive-section"
 import { MarketSection } from "@/components/market-section"
 import { BusinessSection } from "@/components/business-section"
 import { AboutSection } from "@/components/about-section"
-import { CTASection } from "@/components/cta-section"
+import { AskSection } from "@/components/ask-section"
 
 export default function Home() {
   return (
@@ -31,7 +31,9 @@ export default function Home() {
       <section id="about">
         <AboutSection />
       </section>
-      <CTASection />
+      <section id="ask">
+        <AskSection />
+      </section>
     </main>
   )
 }

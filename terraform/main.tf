@@ -12,6 +12,12 @@ provider "aws" {
   region = "ap-southeast-2"
 }
 
+# Provider for us-east-1 (required for CloudFront certificates)
+provider "aws" {
+  alias  = "us_east_1"
+  region = "us-east-1"
+}
+
 # S3 bucket for hosting static website
 resource "aws_s3_bucket" "pitch_reportr" {
   bucket = "pitch-reportr-ai-static-site"
@@ -60,6 +66,32 @@ resource "aws_s3_bucket_policy" "pitch_reportr" {
   depends_on = [aws_s3_bucket_public_access_block.pitch_reportr]
 }
 
+# SSL Certificate for pitch.reportr.ai
+resource "aws_acm_certificate" "pitch_reportr" {
+  provider          = aws.us_east_1
+  domain_name       = "pitch.reportr.ai"
+  validation_method = "DNS"
+
+  lifecycle {
+    create_before_destroy = true
+  }
+
+  tags = {
+    Name = "pitch.reportr.ai"
+  }
+}
+
+# Certificate validation
+resource "aws_acm_certificate_validation" "pitch_reportr" {
+  provider        = aws.us_east_1
+  certificate_arn = aws_acm_certificate.pitch_reportr.arn
+  validation_record_fqdns = [for record in aws_acm_certificate.pitch_reportr.domain_validation_options : record.resource_record_name]
+
+  timeouts {
+    create = "10m"
+  }
+}
+
 # CloudFront Origin Access Control
 resource "aws_cloudfront_origin_access_control" "pitch_reportr" {
   name                              = "pitch-reportr-oac"
@@ -81,7 +113,7 @@ resource "aws_cloudfront_distribution" "pitch_reportr" {
   is_ipv6_enabled     = true
   default_root_object = "index.html"
 
-  # aliases = ["pitch.reportr.ai"]  # Commented out - will use CloudFront domain initially
+  aliases = ["pitch.reportr.ai"]
 
   default_cache_behavior {
     allowed_methods  = ["DELETE", "GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT"]
@@ -127,7 +159,9 @@ resource "aws_cloudfront_distribution" "pitch_reportr" {
   }
 
   viewer_certificate {
-    cloudfront_default_certificate = true
+    acm_certificate_arn      = aws_acm_certificate.pitch_reportr.arn
+    ssl_support_method       = "sni-only"
+    minimum_protocol_version = "TLSv1.2_2021"
   }
 }
 

@@ -8,9 +8,9 @@ const marketData = [
   {
     icon: DollarSign,
     title: "Market Validation",
-    value: "$4.2M",
-    growth: "Marloo Pre-Seed",
-    description: "Direct competitor raised for Australian financial advisors in 2024, proving VC appetite",
+    value: "$1.25B+",
+    growth: "Industry Funding",
+    description: "Growing investor interest in vertical AI solutions for regulated industries",
   },
   {
     icon: TrendingUp,
@@ -21,17 +21,17 @@ const marketData = [
   },
   {
     icon: Users,
-    title: "Australian Advisor Market",
-    value: "15,500",
-    growth: "Down 42% since 2019",
-    description: "Licensed financial advisers remaining after Royal Commission industry consolidation",
+    title: "Phase 1 Markets (AU + NZ)",
+    value: "23,972",
+    growth: "$28.5M ARR Potential",
+    description: "Licensed financial advisers in Australia (15,500) and New Zealand (8,472) at $99/month",
   },
   {
     icon: Target,
-    title: "Multi-Vertical Expansion",
-    value: "Insurance, Accounting, Superannuation",
-    growth: "Template Architecture",
-    description: "Platform scales to any regulated industry needing compliant documentation",
+    title: "Total Addressable Market",
+    value: "50,972",
+    growth: "$60.6M ARR Potential",
+    description: "AU (15.5k) + NZ (8.5k) + UK (27k) advisors across English-speaking markets",
   },
 ]
 
@@ -67,8 +67,8 @@ export function MarketSection() {
             Massive <span className="gradient-text">Market Opportunity</span>
           </h2>
           <p className="lead text-muted-foreground max-w-3xl mx-auto text-pretty">
-            Post-Royal Commission compliance burden (60% of advice costs) creates massive efficiency opportunity for 
-            AI-powered documentation tools in regulated Australian professions.
+            Regulatory compliance burden (60% of advice costs) creates massive efficiency opportunity for 
+            AI-powered documentation tools across English-speaking regulated markets.
           </p>
         </div>
 
@@ -99,18 +99,18 @@ export function MarketSection() {
         <div className={`transition-all duration-1000 delay-500 ${isVisible ? "animate-fade-in" : "opacity-0"}`}>
           <Card className="bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20">
             <CardContent className="p-8 text-center">
-              <h3 className="h3 mb-4">Australia-First Strategy vs. Global Competitors</h3>
+              <h3 className="h3 mb-4">Phased Expansion Strategy vs. Global Competitors</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
                 <div>
                   <h4 className="font-semibold mb-2 text-primary">Market Validation</h4>
                   <p className="text-sm text-muted-foreground">
-                    Marloo's A$4.2M raise proves VC appetite, but they're spreading across 6 countries while we focus 100% on Australia
+                    Rising VC interest in compliance-focused AI tools, but most solutions lack deep regulatory expertise for English-speaking markets
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-2 text-primary">Local Advantage</h4>
+                  <h4 className="font-semibold mb-2 text-primary">Regulatory Expertise</h4>
                   <p className="text-sm text-muted-foreground">
-                    Deep ASIC compliance expertise, Melbourne-based team, direct industry partnerships vs. offshore generalists
+                    Deep compliance expertise across AU/NZ markets, expanding to UK/German regulations with local partnerships
                   </p>
                 </div>
                 <div>

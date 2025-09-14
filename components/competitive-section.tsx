@@ -15,10 +15,10 @@ const competitors = [
     color: "text-muted-foreground",
   },
   {
-    name: "Vertical-Specific (Marloo)",
-    description: "A$4.2M raised, advisors only",
+    name: "Vertical AI Tools",
+    description: "Industry-specific solutions, limited scope",
     strengths: ["Domain expertise", "Regulatory focus"],
-    weaknesses: ["Single industry", "Limited expansion", "Finance-only templates", "Spread across too many countries too early"],
+    weaknesses: ["Single industry", "Limited expansion", "Narrow use cases", "High switching costs"],
     icon: Target,
     color: "text-accent",
   },
@@ -73,7 +73,7 @@ export function CompetitiveSection() {
           </h2>
           <p className="lead text-muted-foreground max-w-3xl mx-auto text-pretty">
             Our strategy positions between generic AI tools and narrow vertical solutions—building compliance-first 
-            architecture with Australia-focused expertise that established players struggle to match.
+            architecture with English-speaking market expertise that established players struggle to match.
           </p>
         </div>
 
@@ -136,7 +136,7 @@ export function CompetitiveSection() {
                   </div>
                   <p className="text-muted-foreground mb-4">
                     Building the only AI meeting assistant designed to generate client-ready, compliance-focused 
-                    documents starting with Australian financial services.
+                    documents across English-speaking regulated markets.
                   </p>
                   <Badge className="bg-primary/10 text-primary">In Development: Compliance-First</Badge>
                 </div>

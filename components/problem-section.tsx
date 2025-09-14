@@ -8,7 +8,7 @@ const problems = [
   {
     icon: TrendingDown,
     title: "Post-Royal Commission Impact",
-    description: "Australia lost 42% of advisers (26.5k→15.5k) due to increased compliance burden and higher professional standards.",
+    description: "Post-regulation advisor decline: Australia (-42% since 2019), similar patterns across English-speaking markets create opportunity.",
     stat: "42%",
     statLabel: "adviser decline since 2019",
   },
@@ -66,7 +66,7 @@ export function ProblemSection() {
             Documentation Is the <span className="gradient-text">Bottleneck</span>
           </h2>
           <p className="lead text-muted-foreground max-w-3xl mx-auto text-pretty">
-            Post-Royal Commission Australia: remaining advisors face unprecedented documentation requirements while 
+            Post-regulation era: remaining advisors across AU/NZ/UK face unprecedented documentation requirements while 
             generic AI tools ignore regulatory realities of financial services compliance.
           </p>
         </div>

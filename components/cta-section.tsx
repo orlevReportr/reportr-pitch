@@ -8,7 +8,7 @@ const milestones = [
   {
     icon: Calendar,
     title: "Product-Market Fit Validation",
-    description: "Month 6: 60+ paying seats (120–200 active users), strong engagement, early expansions; benchmarking against Marloo’s 45% MoM growth",
+    description: "Month 6: 60+ paying seats (120–200 active users), strong engagement, early expansions; targeting 25-35% MoM growth",
   },
   {
     icon: Zap,
@@ -18,7 +18,7 @@ const milestones = [
   {
     icon: Shield,
     title: "Series A Ready Metrics",
-    description: "Month 18: $500k+ ARR (≈300+ SMB seats + 2 - 3 enterprise pilots), proven sales efficiency; sustained 20 - 25% MoM vs Marloo’s 45% MoM",
+    description: "Month 18: $500k+ ARR (≈300+ SMB seats + 2-3 enterprise pilots), proven sales efficiency; sustained 20-25% MoM growth",
   },
 ]
 
@@ -54,7 +54,7 @@ export function CTASection() {
               Join Us to Scale <span className="gradient-text">Impact</span>, Not Admin
             </h2>
             <p className="lead text-muted-foreground max-w-3xl mx-auto text-pretty mb-8">
-              Perfect timing: Marloo validated the market with A$4.2M raise, advisor shortage creates urgency,
+              Perfect timing: Growing VC interest in compliance AI, advisor shortage creates urgency,
               and new ASIC requirements demand better documentation. Ready to scale beyond financial advice.
             </p>
           </div>

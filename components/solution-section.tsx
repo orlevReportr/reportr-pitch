@@ -28,7 +28,7 @@ const features = [
   {
     icon: Users,
     title: "Built by Advisors + Security Experts",
-    description: "Co-designed with Australian financial planners; engineered by security specialists with SOC 2/ISO 27001 readiness in mind",
+    description: "Co-designed with financial planners across AU/NZ markets; engineered by security specialists with SOC 2/ISO 27001 readiness",
   },
   {
     icon: KeyRound,
@@ -67,7 +67,7 @@ export function SolutionSection() {
               Meet <span className="gradient-text">Reportr</span>
             </h2>
             <p className="lead text-muted-foreground mb-8 text-pretty">
-              Building the first AI meeting assistant designed specifically for Australian financial advisors - our MVP 
+              Building the first AI meeting assistant designed for regulated financial advisors across English-speaking markets - our MVP 
               will transform client conversations into ASIC-compliant document drafts for advisor review and finalization.
             </p>
 

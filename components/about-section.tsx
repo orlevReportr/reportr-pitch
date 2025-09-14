@@ -36,7 +36,7 @@ const teamMembers = [
   {
     name: "Moshe Goldsmith",
     role: "Strategic Advisor - Financial Services",
-    bio: "Director-Principal Adviser at Safety Nest. 10+ years as Financial Advisor at Perpetual, Priority Life, and Legacy Risk Advice. Deep expertise in Australian financial planning regulations and compliance.",
+    bio: "Director-Principal Adviser at Safety Nest. 10+ years as Financial Advisor at Perpetual, Priority Life, and Legacy Risk Advice. Deep expertise in Australian and New Zealand financial planning regulations.",
     image: "/placeholder.svg",
     linkedin: "#",
     twitter: "#",
@@ -121,10 +121,10 @@ export function AboutSection() {
             <CardContent className="p-8 text-center">
               <h3 className="h3 mb-4">Why We Built Reportr</h3>
               <p className="text-muted-foreground max-w-4xl mx-auto text-pretty leading-relaxed mb-6">
-                After witnessing Australian financial advisors struggle with post-Royal Commission compliance burdens, 
+                After witnessing financial advisors across AU/NZ struggle with post-regulation compliance burdens, 
                 we knew AI could transform how regulated professionals handle documentation. Our team combines deep 
-                industry expertise with proven technical execution to build the compliance-first meeting assistant 
-                that turns conversations into audit-ready documents.
+                multi-jurisdiction expertise with proven technical execution to build the compliance-first meeting assistant 
+                that turns conversations into audit-ready documents across English-speaking markets.
               </p>
               <div className="text-xs text-muted-foreground/80 border-t pt-4">
                 <p>Comprehensive research backing our thesis available in downloadable investor documentation</p>
