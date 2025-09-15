@@ -11,7 +11,8 @@ const navItems = [
   { name: "Competitive", href: "#competitive" },
   { name: "Market", href: "#market" },
   { name: "Pricing", href: "#pricing" },
-  { name: "About Us", href: "#about" },
+  { name: "Roadmap", href: "#roadmap" },
+  { name: "The Team", href: "#about" },
   { name: "The Ask", href: "#ask" },
 ]
 

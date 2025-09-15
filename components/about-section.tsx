@@ -18,7 +18,7 @@ const teamMembers = [
   {
     name: "Adam Shuvalov",
     role: "Technical Co-Founder",
-    bio: "Software Engineer with NSW Government and former Technical Intelligence Officer. Security and engineering specialist with Bachelor of Security Studies (High Distinction). Cellebrite certified digital forensics analyst.",
+    bio: "Software Engineer with NSW Government and former Technical Intelligence Officer. Security and engineering specialist with background in Security. Cellebrite Certified Operator and Cellebrite Certified Physical Analyst.",
     image: "/placeholder.svg",
     linkedin: "#",
     twitter: "#",
@@ -26,7 +26,7 @@ const teamMembers = [
   },
   {
     name: "Tzvi Balbin",
-    role: "Strategic Advisor - Marketing & Growth (15% equity)",
+    role: "Strategic Advisor - Marketing & Growth",
     bio: "Founder & Head of Digital at DataSauce. 11+ years scaling digital marketing campaigns with 100M+ ad spend across platforms. Leads sales, marketing, and partnership strategy.",
     image: "/placeholder.svg",
     linkedin: "#",
@@ -36,7 +36,7 @@ const teamMembers = [
   {
     name: "Moshe Goldsmith",
     role: "Strategic Advisor - Financial Services",
-    bio: "Director-Principal Adviser at Safety Nest. 10+ years as Financial Advisor at Perpetual, Priority Life, and Legacy Risk Advice. Deep expertise in Australian and New Zealand financial planning regulations.",
+    bio: "Director - Principal Adviser at Safety Nest. 10+ years as Financial Advisor navigating Australia's regulatory environment. Deep expertise in ASIC compliance, file notes, SoA/RoA documentation, and audit requirements.",
     image: "/placeholder.svg",
     linkedin: "#",
     twitter: "#",
@@ -121,14 +121,11 @@ export function AboutSection() {
             <CardContent className="p-8 text-center">
               <h3 className="h3 mb-4">Why We Built Reportr</h3>
               <p className="text-muted-foreground max-w-4xl mx-auto text-pretty leading-relaxed mb-6">
-                After witnessing financial advisors across AU/NZ struggle with post-regulation compliance burdens, 
-                we knew AI could transform how regulated professionals handle documentation. Our team combines deep 
-                multi-jurisdiction expertise with proven technical execution to build the compliance-first meeting assistant 
-                that turns conversations into audit-ready documents across English-speaking markets.
+                After witnessing Australian financial advisors struggle with post-Royal Commission compliance burdens,
+                we knew AI could transform how regulated professionals handle documentation. Our team combines deep
+                Australia regulatory expertise with proven technical execution to build the compliance-first AI co-pilot solution
+                that turns conversations into compliant documentation ready for client delivery and audit.
               </p>
-              <div className="text-xs text-muted-foreground/80 border-t pt-4">
-                <p>Comprehensive research backing our thesis available in downloadable investor documentation</p>
-              </div>
             </CardContent>
           </Card>
         </div>

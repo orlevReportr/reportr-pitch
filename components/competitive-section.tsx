@@ -7,38 +7,38 @@ import { CheckCircle, XCircle, Users, Zap, Shield, Target } from "lucide-react"
 
 const competitors = [
   {
-    name: "Generic AI (Otter.ai)",
-    description: "25M users, transcription focus",
-    strengths: ["Easy setup", "Mass market"],
-    weaknesses: ["No compliance", "Generic output", "No industry templates"],
+    name: "Generic AI Transcription",
+    description: "Otter, Fireflies, Rev.ai - basic transcription",
+    strengths: ["Easy setup", "Mass market", "Low cost"],
+    weaknesses: ["No compliance", "Generic output", "No regulatory templates", "No ASIC understanding"],
     icon: Users,
     color: "text-muted-foreground",
   },
   {
-    name: "Vertical AI Tools",
-    description: "Industry-specific solutions, limited scope",
-    strengths: ["Domain expertise", "Regulatory focus"],
-    weaknesses: ["Single industry", "Limited expansion", "Narrow use cases", "High switching costs"],
+    name: "Manual Documentation",
+    description: "Current state - Word docs, typing notes",
+    strengths: ["Full control", "No setup required"],
+    weaknesses: ["Time intensive", "Error prone", "No compliance guidance", "Not scalable"],
     icon: Target,
     color: "text-accent",
   },
   {
-    name: "Sales Tools (Gong/Chorus)",
-    description: "$7.5B valuation, sales analytics",
-    strengths: ["Enterprise scale", "Deep analytics"],
-    weaknesses: ["Sales-only", "High cost", "Internal-facing only"],
+    name: "Virtual Assistants/Outsourcing",
+    description: "Hiring VAs to write compliance documents",
+    strengths: ["Human review", "Custom work"],
+    weaknesses: ["Expensive", "Slow turnaround", "Quality inconsistency", "No real-time help"],
     icon: Zap,
     color: "text-primary",
   },
 ]
 
 const reportrAdvantages = [
-  "Multi-industry compliance templates",
-  "Client-ready document generation",
-  "Accessible pricing for SMBs",
-  "XPLAN/CRM integrations built-in",
-  "7-year audit trail & retention",
-  "Template marketplace potential",
+  "Complete financial planning ecosystem",
+  "Regulatory compliant documentation workflow",
+  "Automated client workflow management",
+  "Built-in regulatory monitoring",
+  "7-year audit trail & compliance",
+  "Next-gen compliance documentation platform",
 ]
 
 export function CompetitiveSection() {
@@ -72,8 +72,8 @@ export function CompetitiveSection() {
             <span className="gradient-text">Competitive</span> Landscape
           </h2>
           <p className="lead text-muted-foreground max-w-3xl mx-auto text-pretty">
-            Our strategy positions between generic AI tools and narrow vertical solutions—building compliance-first 
-            architecture with English-speaking market expertise that established players struggle to match.
+            We're a purpose-built vertical AI solution for financial advisor compliance — competing against generic tools and manual
+            processes that can't handle regulatory complexity.
           </p>
         </div>
 
@@ -135,8 +135,8 @@ export function CompetitiveSection() {
                     <h3 className="h3">Reportr's Planned Positioning</h3>
                   </div>
                   <p className="text-muted-foreground mb-4">
-                    Building the only AI meeting assistant designed to generate client-ready, compliance-focused 
-                    documents across English-speaking regulated markets.
+                    Purpose-built vertical AI solution that transforms conversations regulatory compliant documentation —
+                    competing against generic tools and manual processes that can't handle regulatory complexity.
                   </p>
                   <Badge className="bg-primary/10 text-primary">In Development: Compliance-First</Badge>
                 </div>

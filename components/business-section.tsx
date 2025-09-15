@@ -10,41 +10,50 @@ const pricingTiers = [
     name: "Free",
     price: "$0",
     period: "forever",
-    description: "Planned free tier to validate product-market fit",
-    features: ["10 meetings per week", "Basic SoA templates", "Standard exports", "Email support"],
+    description: "Perfect for trying Reportr with minimal commitment",
+    features: ["1 document per day", "Basic compliance templates", "Calendar integration", "Community support", "No credit card required"],
     icon: Zap,
     popular: false,
   },
   {
-    name: "Professional",
-    price: "$99",
-    period: "per user/month",
-    description: "Target pricing for individual advisors and small teams",
-    features: [
-      "Unlimited meetings",
-      "All compliance templates",
-      "CRM integrations",
-      "Priority support",
-      "Custom branding",
-      "Advanced analytics",
-    ],
+    name: "Starter",
+    price: "$49",
+    period: "+ usage-based pricing",
+    description: "Flexible pricing for solo advisors and growing practices",
+    features: ["Base plan + pay-per-document", "All compliance templates", "Priority email support", "Advanced analytics", "Cost scales with usage"],
     icon: Building,
+    popular: false,
+  },
+  {
+    name: "Professional",
+    price: "$89",
+    period: "per advisor/month",
+    description: "Unlimited documents for busy advisors and established firms",
+    features: [
+      "Unlimited documents",
+      "All compliance templates",
+      "Priority support",
+      "Team management",
+      "Advanced analytics",
+      "Predictable monthly costs",
+    ],
+    icon: Crown,
     popular: true,
   },
   {
     name: "Enterprise",
     price: "Custom",
-    period: "custom quote",
-    description: "Enterprise pricing model for large organizations",
+    period: "negotiated pricing",
+    description: "Tailored solutions for large firms and dealerships",
     features: [
       "Everything in Professional",
-      "SAML SSO",
-      "Data residency options",
+      "White-label options",
       "Custom integrations",
-      "Dedicated support",
+      "Dedicated account manager",
       "SLA guarantees",
+      "Volume discounts",
     ],
-    icon: Crown,
+    icon: Building,
     popular: false,
   },
 ]
@@ -80,11 +89,11 @@ export function BusinessSection() {
             Planned <span className="gradient-text">Pricing Strategy</span>
           </h2>
           <p className="lead text-muted-foreground max-w-3xl mx-auto text-pretty">
-            Our pricing strategy based on GTM research: accessible for solo advisors, efficient for mid-size firms, enterprise-ready compliance.
+            Start free, scale affordably: from 1 document per day forever free, to usage-based pricing for solos, to unlimited plans for established practices.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {pricingTiers.map((tier, index) => (
             <Card
               key={tier.name}
@@ -136,27 +145,36 @@ export function BusinessSection() {
             </Card>
           ))}
         </div>
-
-        <div className={`transition-all duration-1000 delay-500 ${isVisible ? "animate-fade-in" : "opacity-0"}`}>
-          <Card className="bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20">
-            <CardContent className="p-8">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <div>
-                  <div className="text-3xl font-bold text-primary mb-2">1-2 hrs</div>
-                  <div className="text-sm text-muted-foreground">Per client SoA creation</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-primary mb-2">$300-800</div>
-                  <div className="text-sm text-muted-foreground">Current outsourcing cost per SoA</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-primary mb-2">$39 AUD</div>
-                  <div className="text-sm text-muted-foreground">Lower than Claras ($139)</div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
+        {/*<div className={`transition-all duration-1000 delay-500 ${isVisible ? "animate-fade-in" : "opacity-0"}`}>*/}
+        {/*  <Card className="bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20">*/}
+        {/*    <CardContent className="p-8">*/}
+        {/*      <h3 className="h3 mb-6 text-center">Why Our Pricing Works</h3>*/}
+        {/*      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">*/}
+        {/*        <div>*/}
+        {/*          <div className="text-3xl font-bold text-primary mb-2">Free</div>*/}
+        {/*          <div className="text-sm text-muted-foreground">Start with 1 document/day forever</div>*/}
+        {/*        </div>*/}
+        {/*        <div>*/}
+        {/*          <div className="text-3xl font-bold text-primary mb-2">$49</div>*/}
+        {/*          <div className="text-sm text-muted-foreground">Base price + usage-based scaling</div>*/}
+        {/*        </div>*/}
+        {/*        <div>*/}
+        {/*          <div className="text-3xl font-bold text-primary mb-2">36%</div>*/}
+        {/*          <div className="text-sm text-muted-foreground">Cheaper than Claras unlimited ($139)</div>*/}
+        {/*        </div>*/}
+        {/*        <div>*/}
+        {/*          <div className="text-3xl font-bold text-primary mb-2">Custom</div>*/}
+        {/*          <div className="text-sm text-muted-foreground">Enterprise solutions & volume pricing</div>*/}
+        {/*        </div>*/}
+        {/*      </div>*/}
+        {/*      <div className="mt-6 text-center">*/}
+        {/*        <p className="text-sm text-muted-foreground italic">*/}
+        {/*          Usage-based pricing details determined by operational costs and user psychology research*/}
+        {/*        </p>*/}
+        {/*      </div>*/}
+        {/*    </CardContent>*/}
+        {/*  </Card>*/}
+        {/*</div>*/}
       </div>
     </section>
   )

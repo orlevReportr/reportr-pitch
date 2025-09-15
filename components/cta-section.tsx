@@ -13,7 +13,7 @@ const milestones = [
   {
     icon: Zap,
     title: "Key Integrations & Partnerships",
-    description: "Month 9: XPLAN integration, 1-2 AFSL partnerships for distribution",
+    description: "Month 9: Client portal launch, AFSL approved product status achieved",
   },
   {
     icon: Shield,
@@ -55,7 +55,7 @@ export function CTASection() {
             </h2>
             <p className="lead text-muted-foreground max-w-3xl mx-auto text-pretty mb-8">
               Perfect timing: Growing VC interest in compliance AI, advisor shortage creates urgency,
-              and new ASIC requirements demand better documentation. Ready to scale beyond financial advice.
+              and new ASIC, FMA, and FCA requirements demand better documentation. Ready to scale beyond financial advice.
             </p>
           </div>
 
@@ -66,7 +66,7 @@ export function CTASection() {
                   <h3 className="h3 mb-6">The Ask</h3>
                   <div className="space-y-6">
                     <div>
-                      <h4 className="font-semibold text-primary mb-2">A$350K SAFE (A$3M cap)</h4>
+                      <h4 className="font-semibold text-primary mb-2">A$350K SAFE</h4>
                       <p className="text-muted-foreground body-sm">
 24-month runway with conservative milestones based on realistic development timeline
                       </p>
@@ -75,7 +75,7 @@ export function CTASection() {
                     <div>
                       <h4 className="font-semibold text-primary mb-2">Use of Funds</h4>
                       <ul className="text-muted-foreground body-sm space-y-1">
-                        <li>• 50% Engineering (CRM integrations, AI/compliance features)</li>
+                        <li>• 50% Engineering (Platform features, AI/compliance capabilities)</li>
                         <li>• 25% Customer Acquisition (direct sales, partnerships)</li>
                         <li>• 15% Marketing (content, webinars, industry presence)</li>
                         <li>• 10% Operations (security certifications, legal)</li>
@@ -123,38 +123,13 @@ export function CTASection() {
                 Reportr turns meetings into <strong>compliant, shippable work</strong> - not just notes.
               </div>
 
-              <div className="space-y-8">
-                <div className="flex justify-center">
-                  <div className="bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 rounded-xl px-8 py-6">
-                    <div className="text-center space-y-2">
-                      <div className="font-semibold text-primary">Investment Opportunity</div>
-                      <div className="h3">A$350K SAFE @ A$3M Cap</div>
-                      <div className="body-sm text-muted-foreground">24-month runway • Series A preparation</div>
-                    </div>
+              <div className="flex justify-center">
+                <div className="bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 rounded-xl px-8 py-6">
+                  <div className="text-center space-y-2">
+                    <div className="font-semibold text-primary">Investment Opportunity</div>
+                    <div className="h3">A$350K SAFE</div>
+                    <div className="body-sm text-muted-foreground">24-month runway • Series A preparation</div>
                   </div>
-                </div>
-                
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                  <a 
-                    href={`${BASE_PATH}/docs/Australian Financial Planning Documentation Ecosystem.pdf`}
-                    download="Reportr-Australian-Financial-Planning-Ecosystem.pdf"
-                    className="inline-flex items-center px-6 py-3 border border-primary/20 rounded-lg bg-primary/5 hover:bg-primary/10 transition-colors text-primary font-medium"
-                  >
-                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
-                    Market Research Report
-                  </a>
-                  <a 
-                    href={`${BASE_PATH}/docs/Go-to-Market Strategy for Reportr (AI Meeting Assistant for Australian Advisers).pdf`}
-                    download="Reportr-Go-to-Market-Strategy.pdf"
-                    className="inline-flex items-center px-6 py-3 border border-accent/20 rounded-lg bg-accent/5 hover:bg-accent/10 transition-colors text-primary font-medium"
-                  >
-                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
-                    Go-to-Market Strategy
-                  </a>
                 </div>
               </div>
             </div>

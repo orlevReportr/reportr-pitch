@@ -29,8 +29,8 @@ export function HeroSection() {
 
             <div className={`transition-all duration-1000 delay-300 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
               <p className="lead text-muted-foreground mb-8 max-w-3xl mx-auto text-pretty">
-                We're building AI-powered meeting documentation designed to transform client conversations into 
-                compliance-ready drafts for financial advisors and regulated professionals across Australia, New Zealand, UK, and Germany.
+                We're building an AI co-pilot solution designed to transform client conversations into
+                compliance ready documentation for financial advisors.
               </p>
             </div>
 
@@ -45,7 +45,7 @@ export function HeroSection() {
 
             <div className={`transition-all duration-1000 delay-700 ${isVisible ? "animate-fade-in" : "opacity-0"}`}>
               <div className="mt-12 text-sm text-muted-foreground">
-                Pre-revenue startup • MVP built • Strategic advisor partnerships • Multi-country expansion strategy
+                Pre-revenue startup • MVP built • Multi-country expansion strategy
               </div>
             </div>
           </div>

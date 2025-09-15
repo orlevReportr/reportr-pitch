@@ -7,33 +7,34 @@ import { TrendingDown, Clock, FileText, AlertTriangle } from "lucide-react"
 const problems = [
   {
     icon: TrendingDown,
-    title: "Post-Royal Commission Impact",
-    description: "Post-regulation advisor decline: Australia (-42% since 2019), similar patterns across English-speaking markets create opportunity.",
+    title: "Shrinking Adviser Workforce",
+    description: "Regulatory change has driven adviser exits worldwide (e.g. 42% decline in Australia since 2019), leaving those who remain under intense efficiency pressure.",
     stat: "42%",
-    statLabel: "adviser decline since 2019",
+    statLabel: "adviser decline (AU since 2019)",
   },
   {
     icon: FileText,
-    title: "ASIC Documentation Requirements",
-    description: "FSG, SoA, RoA, PDS, and file notes must be retained for 7 years with strict record-keeping under new 2024 instrument.",
-    stat: "7 years",
-    statLabel: "mandatory retention period",
+    title: "Heavy Documentation Burden",
+    description: "Advisers face strict record-keeping rules across markets — from 7-year retention in AU/NZ to 5-year suitability records in the UK. SoAs, RoAs, and review notes must be audit-ready.",
+    stat: "5 - 7 yrs",
+    statLabel: "mandatory record retention",
   },
   {
     icon: Clock,
-    title: "Documentation Time Drain",
-    description: "Up to 60% of the total cost of providing financial advice is now consumed by administration and compliance tasks.",
+    title: "Time and Cost Drain",
+    description: "Up to 60% of the cost of providing advice is swallowed by compliance paperwork, reducing client-facing time and driving adviser burnout.",
     stat: "60%",
     statLabel: "of advice costs are admin",
   },
   {
     icon: AlertTriangle,
-    title: "Generic AI Tools Miss the Mark",
-    description: "Otter and similar tools create meeting transcripts, but advisors need compliant SoA and RoA documents ready for audit.",
+    title: "Generic AI Tools Fall Short",
+    description: "Consumer-grade AI tools produce transcripts but ignore regulatory standards. Advisors need jurisdiction-specific documents, not just meeting notes.",
     stat: "0%",
-    statLabel: "regulatory compliance built-in",
+    statLabel: "compliance built-in",
   },
 ]
+
 
 export function ProblemSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -66,8 +67,7 @@ export function ProblemSection() {
             Documentation Is the <span className="gradient-text">Bottleneck</span>
           </h2>
           <p className="lead text-muted-foreground max-w-3xl mx-auto text-pretty">
-            Post-regulation era: remaining advisors across AU/NZ/UK face unprecedented documentation requirements while 
-            generic AI tools ignore regulatory realities of financial services compliance.
+            Regulators worldwide have tightened documentation and record-keeping expectations for financial advice. Generic AI tools rarely address these jurisdiction-specific requirements, leaving advisors without the compliance safeguards they need.
           </p>
         </div>
 

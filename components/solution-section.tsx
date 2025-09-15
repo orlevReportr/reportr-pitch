@@ -2,39 +2,40 @@
 
 import { useEffect, useRef, useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
-import { Bot, FileCheck, Zap, Shield, KeyRound, Users } from "lucide-react"
+import { Bot, FileCheck, Timer, Shield, KeyRound, Users } from "lucide-react"
 
 const features = [
   {
     icon: Bot,
     title: "AI Meeting Processing",
-    description: "Built: Calendar-integrated system to process meeting recordings with speaker identification",
+    description: "Built: Calendar integrated system to auto join meetings, process recordings with speaker identification, and generate bespoke documentation",
   },
   {
     icon: FileCheck,
-    title: "Compliance-Focused Templates",
-    description: "Built: SoA, RoA, and file note templates designed to meet ASIC regulatory standards",
-  },
-  {
-    icon: Zap,
-    title: "CRM Integration (Planned)",
-    description: "Phase 1 roadmap: XPLAN integration for client record management and automated workflow",
+    title: "Compliance Focused Templates",
+    description: "Built: Highly comprehensive and customisable template library. SoA, RoA, and file note templates designed to meet each countries regulatory standards",
   },
   {
     icon: Shield,
     title: "Compliance Infrastructure",
-    description: "Architecture designed for secure document storage, encryption, and audit trails per ASIC requirements",
+    description: "Built: Architecture designed for secure document storage, encryption, and audit trails per ASIC requirements",
   },
   {
     icon: Users,
     title: "Built by Advisors + Security Experts",
-    description: "Co-designed with financial planners across AU/NZ markets; engineered by security specialists with SOC 2/ISO 27001 readiness",
+    description: "Built: Co-designed with financial advisors across AU markets; engineered by security specialists with SOC 2/ISO 27001 in mind",
   },
   {
     icon: KeyRound,
-    title: "SSO + Zoom Meetings",
+    title: "SSO",
     description: "Built: Google/Microsoft SSO and Zoom OAuth; one‑click auto‑join from calendar invites",
   },
+  {
+    icon: Timer,
+    title: "Time Savings at Scale",
+    description: "Built: Turn multi-hour write-ups into minutes with automated drafting, smart reuse of client data, and one-click exports — freeing advisers to spend more time with clients.",
+  }
+
 ]
 
 export function SolutionSection() {
@@ -67,8 +68,8 @@ export function SolutionSection() {
               Meet <span className="gradient-text">Reportr</span>
             </h2>
             <p className="lead text-muted-foreground mb-8 text-pretty">
-              Building the first AI meeting assistant designed for regulated financial advisors across English-speaking markets - our MVP 
-              will transform client conversations into ASIC-compliant document drafts for advisor review and finalization.
+              Building an AI co-pilot solution for financial advisors navigating
+              regulation — our MVP transforms client conversations into compliant documentation for advisor review and finalisation.
             </p>
 
             <div className="space-y-6 mb-8">
@@ -77,9 +78,9 @@ export function SolutionSection() {
                   <div className="w-3 h-3 bg-primary rounded-full"></div>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">Meeting → Statement of Advice</h4>
+                  <h4 className="font-semibold mb-1">SOC 2 Compliant</h4>
                   <p className="text-muted-foreground body-sm">
-                    Planned: AI-assisted draft SoA generation with client goals, recommendations, and ASIC disclosure templates
+                    Roadmap: Actively working toward SOC 2 compliance as part of our commitment to security and trust
                   </p>
                 </div>
               </div>
@@ -89,9 +90,9 @@ export function SolutionSection() {
                   <div className="w-3 h-3 bg-primary rounded-full"></div>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">Compliance Template Engine</h4>
+                  <h4 className="font-semibold mb-1">E-Signature Integration</h4>
                   <p className="text-muted-foreground body-sm">
-                    Built: Template library for FSG delivery, fact-finding, advice presentation, and RoA documentation
+                    Roadmap: Native DocuSign/Adobe Sign flow for rapid client approvals and automated filing
                   </p>
                 </div>
               </div>
@@ -101,9 +102,22 @@ export function SolutionSection() {
                   <div className="w-3 h-3 bg-primary rounded-full"></div>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">XPLAN CRM Integration</h4>
+                  <h4 className="font-semibold mb-1">Advisor Collaboration</h4>
                   <p className="text-muted-foreground body-sm">
-                    Roadmap priority: Direct integration with XPLAN for seamless client data sync and workflow automation
+                    Roadmap: Real-time co-authoring, comments, and role-based reviews to speed up document production
+                  </p>
+                </div>
+              </div>
+
+
+              <div className="flex items-start space-x-4">
+                <div className="flex-shrink-0 w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                  <div className="w-3 h-3 bg-primary rounded-full"></div>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-1">Automated Monitoring of Regulatory Updates</h4>
+                  <p className="text-muted-foreground body-sm">
+                    Roadmap: Continuously monitors regulatory bodies for policy updates, automatically alerting advisers when changes affect their obligations or documentation requirements
                   </p>
                 </div>
               </div>
@@ -116,14 +130,10 @@ export function SolutionSection() {
                   <h4 className="font-semibold mb-1">AFSL Approved Product List (APL)</h4>
                   <p className="text-muted-foreground body-sm">
                     Roadmap: targeted program for AFSL inclusion — due diligence package (security/compliance attestations,
-                    SOC&nbsp;2/ISO&nbsp;27001 readiness), data residency, audit logs, legal review, and pilot references to meet APL requirements.
+                    SOC&nbsp;2/ISO&nbsp;27001 readiness), data residency, audit logs, legal review, and pilot references to meet APL requirements
                   </p>
                 </div>
               </div>
-            </div>
-
-            <div className="bg-accent/20 border border-accent/40 rounded-lg px-4 py-3 inline-block">
-              <p className="body-sm font-medium text-primary">MVP Development Timeline: Q2 2025</p>
             </div>
           </div>
 
