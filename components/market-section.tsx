@@ -21,10 +21,10 @@ const marketData = [
   },
   {
     icon: Users,
-    title: "Australia + New Zealand Focus",
-    value: "23,972",
-    growth: "$28.5M ARR Potential",
-    description: "Australia (15,500) and New Zealand (8,472) targeted first for clear documentation and record-keeping rules in adviser workflows",
+    title: "Australia + New Zealand + UK",
+    value: "58,972",
+    growth: "62.5M ARR Potential",
+    description: "Australia (15,500), New Zealand (8,472), United Kingdom (35,742). ANZ targeted first for clear documentation and record-keeping rules in adviser workflows",
   },
   {
     icon: Target,

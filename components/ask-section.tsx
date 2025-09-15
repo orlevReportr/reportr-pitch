@@ -75,7 +75,7 @@ export function AskSection() {
                   </div>
                   <div className="hidden md:block w-px h-16 bg-border"></div>
                   <div>
-                    <div className="text-4xl font-bold text-primary mb-2">24 Months</div>
+                    <div className="text-4xl font-bold text-primary mb-2">18 Months</div>
                     <div className="text-sm text-muted-foreground">Seed Runway</div>
                   </div>
                   <div className="hidden md:block w-px h-16 bg-border"></div>
@@ -150,7 +150,7 @@ export function AskSection() {
                 <div className="text-center space-y-1">
                   <div className="font-semibold text-primary text-sm">Let's discuss the opportunity</div>
                   <div className="text-2xl font-bold">A$350K SAFE Investment</div>
-                  <div className="text-sm text-muted-foreground">Seed ready in 24 months</div>
+                  <div className="text-sm text-muted-foreground">Seed ready in 18 months</div>
                 </div>
               </div>
             </CardContent>
