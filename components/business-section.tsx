@@ -38,7 +38,7 @@ const pricingTiers = [
       "Predictable monthly costs",
     ],
     icon: Crown,
-    popular: true,
+    popular: false,
   },
   {
     name: "Enterprise",
