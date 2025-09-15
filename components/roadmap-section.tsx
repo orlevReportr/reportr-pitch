@@ -41,7 +41,7 @@ const timelineItems = [
   },
   {
     month: "Month 18",
-    title: "UK Launch & Series A Readiness",
+    title: "UK Launch & Pre-Seed Readiness",
     description: "FCA compliance + UK market entry with proven sales model (Target: 300+ SMB + 8 Enterprise, $42K MRR)",
     type: "expansion",
     target: "$500K ARR ($42K MRR)"

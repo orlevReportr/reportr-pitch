@@ -22,8 +22,8 @@ const highlights = [
   },
   {
     icon: DollarSign,
-    title: "Series A Ready Platform",
-    description: "24-month runway to build defensible moats: SOC 2, AFSL partnerships, enterprise features, UK expansion"
+    title: "Seed Ready Platform",
+    description: "18-month runway to build defensible moats: SOC 2, AFSL partnerships, enterprise features, UK expansion"
   }
 ]
 
@@ -76,7 +76,7 @@ export function AskSection() {
                   <div className="hidden md:block w-px h-16 bg-border"></div>
                   <div>
                     <div className="text-4xl font-bold text-primary mb-2">24 Months</div>
-                    <div className="text-sm text-muted-foreground">Series A Runway</div>
+                    <div className="text-sm text-muted-foreground">Seed Runway</div>
                   </div>
                   <div className="hidden md:block w-px h-16 bg-border"></div>
                   <div>
@@ -150,7 +150,7 @@ export function AskSection() {
                 <div className="text-center space-y-1">
                   <div className="font-semibold text-primary text-sm">Let's discuss the opportunity</div>
                   <div className="text-2xl font-bold">A$350K SAFE Investment</div>
-                  <div className="text-sm text-muted-foreground">Series A ready in 24 months</div>
+                  <div className="text-sm text-muted-foreground">Seed ready in 24 months</div>
                 </div>
               </div>
             </CardContent>

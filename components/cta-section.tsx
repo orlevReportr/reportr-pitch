@@ -17,7 +17,7 @@ const milestones = [
   },
   {
     icon: Shield,
-    title: "Series A Ready Metrics",
+    title: "Seed Ready Metrics",
     description: "Month 18: $500k+ ARR (≈300+ SMB seats + 2-3 enterprise pilots), proven sales efficiency; sustained 20-25% MoM growth",
   },
 ]
@@ -68,7 +68,7 @@ export function CTASection() {
                     <div>
                       <h4 className="font-semibold text-primary mb-2">A$350K SAFE</h4>
                       <p className="text-muted-foreground body-sm">
-24-month runway with conservative milestones based on realistic development timeline
+18-month runway with conservative milestones based on realistic development timeline
                       </p>
                     </div>
 
@@ -128,7 +128,7 @@ export function CTASection() {
                   <div className="text-center space-y-2">
                     <div className="font-semibold text-primary">Investment Opportunity</div>
                     <div className="h3">A$350K SAFE</div>
-                    <div className="body-sm text-muted-foreground">24-month runway • Series A preparation</div>
+                    <div className="body-sm text-muted-foreground">18-month runway • Seed preparation</div>
                   </div>
                 </div>
               </div>
